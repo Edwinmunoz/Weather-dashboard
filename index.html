@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WeatherDashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">WeatherDashboard</span>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 bg-light">
+                <h4 class="pt-1">
+                    <strong>Search for city:</strong>
+                </h4>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="search-city" aria-label="City Search" aria-describedby="searc-button">
+                    <div class="input-group-append">
+                        <button class="btn bg-primary text-light" id="search-button">
+                            <i class="fa fa-search">
+                                ::before
+                            </i>
+                        </button>
+                    </div>
+
+                </div>
+                <button class="btn btn=primary" type="button" id="clear-history">
+                    clear history
+                </button>
+                <ul class="list-group">  
+                </ul>            
+            </div>
+            <div class="col-sm-8">
+                <div class="row m1-2 border border-dark rounded">
+                    <div class="col-sm-12" id="current-weather">
+                        <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                        <p>
+                            Temperature:
+                            <span class="current" id="Temperature"></span>
+                        </p>
+                        <p>
+                            Humidity:
+                            <span class="current" id="Humidity"></span>
+                        </p>
+                        <p>
+                            Wind speed:
+                            <span class="current" id="wind speed"></span>
+                        </p>
+                        <p>
+                            UV index:
+                            <span class="current bg-danger rounded py-2 px-2 text-white" id="UV index"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    </div>
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
